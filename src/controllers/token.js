@@ -16,7 +16,7 @@ exports.get = async function() {
     return _token;
   } else {
     try {
-      _token = await readFile('/var/lib/zerotier-one/authtoken.secret', 'utf8');
+      _token = await readFile('/var/db/zerotier-one/authtoken.secret', 'utf8');
       return _token;
     } catch(err) {
       throw(err);
