@@ -8,7 +8,7 @@ const got = require('got');
 const ipaddr = require('ip-address');
 const token = require('./token');
 
-ZT_ADDR = process.env.ZT_ADDR || 'localhost:9993';
+ZT_ADDR = process.env.ZT_ADDR || 'localhost:43434';
 
 init_options = async function() {
   let tok = null;
